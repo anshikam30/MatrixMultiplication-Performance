@@ -1,0 +1,78 @@
+
+(i,j,k):
+
+
+Performance counter stats for './mmap8192a':
+
+
+11,553,311,000,639      L1-dcache-loads                                               (75.00%)
+26,964,902,238,379       instructions             #    1.16  insn per cycle           (87.50%)
+            40,879      context-switches                                            
+   655,251,208,346      L1-dcache-load-misses     #    5.67% of all L1-dcache accesses  (87.50%)
+   546,031,856,201      LLC-load-misses                                               (87.50%)
+   551,031,502,373      l2_rqsts.all_demand_miss                                      (75.00%)
+ 1,060,673,897,750      cache-misses                                                  (87.50%)
+         3,892,950      dTLB-load-misses                                              (75.00%)
+               493      page-faults                                                 
+23,317,875,301,326      cpu-cycles                                                    (87.50%)
+   <not supported>      stalled-cycles-frontend                                     
+
+   11269.501420186 seconds time elapsed
+
+   11267.153062000 seconds user
+       1.179959000 seconds sys
+
+
+
+
+(j,i,k):
+
+
+Performance counter stats for './mmap8192b':
+
+11,553,763,404,884      L1-dcache-loads                                               (75.00%)
+26,966,874,466,449      instructions              #    1.05  insn per cycle           (87.50%)
+            24,532      context-switches                                            
+   655,066,173,259      L1-dcache-load-misses     #    5.67% of all L1-dcache accesses  (87.50%)
+   544,450,732,329      LLC-load-misses                                               (87.50%)
+   551,288,189,940      l2_rqsts.all_demand_miss                                      (75.00%)
+   941,559,400,752      cache-misses                                                  (87.50%)
+         2,583,816      dTLB-load-misses                                              (75.00%)
+               478      page-faults                                                 
+25,582,211,112,583      cpu-cycles                                                    (87.50%)
+   <not supported>      stalled-cycles-frontend                                     
+
+   14035.741063561 seconds time elapsed
+
+   14032.435934000 seconds user
+       0.387991000 seconds sys
+
+
+
+
+(k,i,j):
+
+
+Performance counter stats for './mmap8192c':
+
+11,549,295,546,191      L1-dcache-loads                                               (75.00%)
+26,952,035,413,324      instructions              #    4.22  insn per cycle           (87.50%)
+             2,165      context-switches                                            
+    68,614,218,133      L1-dcache-load-misses     #    0.59% of all L1-dcache accesses  (87.50%)
+       108,488,306      LLC-load-misses                                               (87.50%)
+       306,877,988      l2_rqsts.all_demand_miss                                      (75.00%)
+     9,155,263,637      cache-misses                                                  (87.50%)
+           779,903      dTLB-load-misses                                              (75.00%)
+               481      page-faults                                                 
+ 6,383,526,692,740      cpu-cycles                                                    (87.50%)
+   <not supported>      stalled-cycles-frontend                                     
+
+    2066.075403322 seconds time elapsed
+
+    2065.967418000 seconds user
+       0.095999000 seconds sys
+
+
+
+
+

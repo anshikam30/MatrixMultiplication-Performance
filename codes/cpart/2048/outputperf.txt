@@ -1,0 +1,66 @@
+(i,j,k):
+
+
+Performance counter stats for './mat2048a':
+
+
+   189,905,126,070      L1-dcache-loads                                               (85.72%)
+        73,115,969      L1-dcache-load-misses     #    0.04% of all L1-dcache accesses  (85.71%)
+        16,956,385      LLC-load-misses                                               (85.69%)
+        20,952,771      l2_rqsts.all_demand_miss                                      (71.43%)
+        74,907,183      cache-misses                                                  (85.70%)
+         2,082,847      dTLB-load-misses                                              (71.44%)
+            12,373      page-faults                                                 
+   128,109,040,383      cpu-cycles                                                    (85.73%)
+   <not supported>      stalled-cycles-frontend                                     
+
+      41.577237601 seconds time elapsed
+
+      41.555211000 seconds user
+       0.019997000 seconds sys
+
+
+
+
+(j,i,k):
+
+
+    Performance counter stats for './mat2048b':
+    
+
+   189,908,328,398      L1-dcache-loads                                               (85.67%)
+       328,584,277      L1-dcache-load-misses     #    0.17% of all L1-dcache accesses  (85.73%)
+        15,523,235      LLC-load-misses                                               (85.71%)
+        20,041,380      l2_rqsts.all_demand_miss                                      (71.45%)
+        73,594,263      cache-misses                                                  (85.74%)
+         2,143,315      dTLB-load-misses                                              (71.44%)
+            12,371      page-faults                                                 
+   120,786,393,784      cpu-cycles                                                    (85.70%)
+   <not supported>      stalled-cycles-frontend                                     
+
+      39.230588361 seconds time elapsed
+
+      39.067431000 seconds user
+       0.148012000 seconds sys
+
+
+
+(k,i,j):
+
+
+ Performance counter stats for './mat2048c':
+
+   189,902,796,698      L1-dcache-loads                                               (85.71%)
+     1,111,867,101      L1-dcache-load-misses     #    0.59% of all L1-dcache accesses  (85.71%)
+        17,931,183      LLC-load-misses                                               (85.71%)
+        33,802,443      l2_rqsts.all_demand_miss                                      (71.44%)
+        67,436,514      cache-misses                                                  (85.72%)
+         8,675,967      dTLB-load-misses                                              (71.42%)
+            12,371      page-faults                                                 
+   180,969,621,891      cpu-cycles                                                    (85.71%)
+   <not supported>      stalled-cycles-frontend                                     
+
+      59.753076292 seconds time elapsed
+
+      59.735091000 seconds user
+       0.015999000 seconds sys

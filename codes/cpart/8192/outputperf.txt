@@ -1,0 +1,60 @@
+
+(i,j,k):
+
+Performance counter stats for './mat8192a':
+
+   180,739,727,155      L1-dcache-loads                                               (85.68%)
+     9,741,807,075      L1-dcache-load-misses     #    5.39% of all L1-dcache accesses  (85.72%)
+     1,338,881,134      LLC-load-misses                                               (85.72%)
+     1,948,799,795      l2_rqsts.all_demand_miss                                      (71.46%)
+     8,591,296,614      cache-misses                                                  (85.73%)
+           499,082      dTLB-load-misses                                              (71.41%)
+                85      page-faults                                                 
+   615,216,173,251      cpu-cycles                                                    (85.72%)
+   <not supported>      stalled-cycles-frontend                                     
+
+     212.852182619 seconds time elapsed
+
+     212.019258000 seconds user
+       0.672695000 seconds sys
+
+
+(j,i,k):
+
+Performance counter stats for './mat8192b':
+
+   180,753,153,178      L1-dcache-loads                                               (85.69%)
+     9,851,671,777      L1-dcache-load-misses     #    5.45% of all L1-dcache accesses  (85.72%)
+     1,329,822,024      LLC-load-misses                                               (85.68%)
+     1,737,620,217      l2_rqsts.all_demand_miss                                      (71.44%)
+     7,961,433,562      cache-misses                                                  (85.72%)
+         3,318,973      dTLB-load-misses                                              (71.47%)
+                85      page-faults                                                 
+   695,918,561,062      cpu-cycles                                                    (85.72%)
+   <not supported>      stalled-cycles-frontend                                     
+
+     259.729500391 seconds time elapsed
+
+     255.390252000 seconds user
+       1.322911000 seconds sys
+
+
+(k,i,j):
+
+Performance counter stats for './mat8192c':
+
+
+   180,730,839,294      L1-dcache-loads                                               (85.72%)
+     9,383,600,361      L1-dcache-load-misses     #    5.19% of all L1-dcache accesses  (85.71%)
+     1,292,244,985      LLC-load-misses                                               (85.71%)
+     1,786,309,244      l2_rqsts.all_demand_miss                                      (71.41%)
+     7,912,368,238      cache-misses                                                  (85.72%)
+         2,475,282      dTLB-load-misses                                              (71.45%)
+                84      page-faults                                                 
+   685,764,925,276      cpu-cycles                                                    (85.74%)
+   <not supported>      stalled-cycles-frontend                                     
+
+     261.879519475 seconds time elapsed
+
+     260.767063000 seconds user
+       0.252390000 seconds sys

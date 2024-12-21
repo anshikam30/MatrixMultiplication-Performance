@@ -1,0 +1,71 @@
+
+(i,j,k):
+
+
+Performance counter stats for './mmap2048a':
+
+
+   180,864,164,450      L1-dcache-loads                                               (85.71%)
+     9,342,063,046      L1-dcache-load-misses     #    5.17% of all L1-dcache accesses  (85.72%)
+     1,519,024,408      LLC-load-misses                                               (85.69%)
+     2,391,684,627      l2_rqsts.all_demand_miss                                      (71.40%)
+     9,817,534,694      cache-misses                                                  (85.66%)
+         3,207,354      dTLB-load-misses                                              (71.49%)
+                83      page-faults                                                 
+   506,539,994,308      cpu-cycles                                                    (85.76%)
+   <not supported>      stalled-cycles-frontend                                     
+
+     217.478318803 seconds time elapsed
+
+     213.550053000 seconds user
+       0.907923000 seconds sys
+
+
+
+(j,i,k):
+
+
+Performance counter stats for './mmap2048b':
+
+   421,931,373,097      instructions              #    0.66  insn per cycle           (87.51%)
+             3,890      context-switches                                            
+   180,722,940,550      L1-dcache-loads                                               (87.50%)
+    10,240,889,666      L1-dcache-load-misses     #    5.67% of all L1-dcache accesses  (87.48%)
+       823,104,240      LLC-load-misses                                               (87.50%)
+     1,618,566,449      l2_rqsts.all_demand_miss                                      (75.02%)
+     5,127,816,823      cache-misses                                                  (87.50%)
+         5,536,622      dTLB-load-misses                                              (62.50%)
+                83      page-faults                                                 
+   643,672,374,626      cpu-cycles                                                    (75.01%)
+   <not supported>      stalled-cycles-frontend                                     
+
+     258.347648418 seconds time elapsed
+
+     257.727832000 seconds user
+       0.076115000 seconds sys
+
+
+
+(k,i,j):
+
+
+Performance counter stats for 'mmap2048c':
+
+
+   421,802,170,393      instructions              #    2.53  insn per cycle           (87.50%)
+               314      context-switches                                            
+   180,619,259,050      L1-dcache-loads                                               (87.50%)
+       962,072,465      L1-dcache-load-misses     #    0.53% of all L1-dcache accesses  (87.48%)
+         8,338,327      LLC-load-misses                                               (87.49%)
+        14,703,492      l2_rqsts.all_demand_miss                                      (75.03%)
+       198,918,668      cache-misses                                                  (87.48%)
+           907,523      dTLB-load-misses                                              (62.50%)
+                84      page-faults                                                 
+   166,790,935,629      cpu-cycles                                                    (75.00%)
+   <not supported>      stalled-cycles-frontend                                     
+
+      54.454183321 seconds time elapsed
+
+      54.392610000 seconds user
+       0.051989000 seconds sys
+
